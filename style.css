@@ -7,7 +7,7 @@
 }
 
 /* Estilo para los enlaces y botones */
-li, a{
+li, a, p{
     font-family: kadwa; /* Tipo de letra */
     font-weight: bold; /* Peso de la fuente */
     font-size: 17px; /* Tamaño de la fuente */
@@ -29,6 +29,7 @@ header {
     cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
     width: 150px; /* Ancho del logo */
     height: max-content; /* Altura automática según el contenido */
+    margin-left: 40px;
 }
 
 /* Estilo para la lista de enlaces en el menú */
@@ -38,9 +39,10 @@ header {
 
 /* Estilo para los elementos de la lista */
 .links li {
+    text-align:left;
     position: relative; /* Posicionamiento relativo para los elementos de la lista */
     display: inline-block; /* Alineación horizontal */
-    padding: 0 20px; /* Espacio lateral para los elementos de la lista */
+    padding: 0px 20px; /* Espacio lateral para los elementos de la lista */
 }
 
 /* Estilo para el submenú (opciones de Ingresar) */
@@ -48,8 +50,9 @@ header {
     display: none; /* Oculta el submenú inicialmente */
     position: absolute; /* Posicionamiento absoluto respecto al <li> padre */
     top: 100%; /* Se coloca justo debajo del elemento padre */
-    left: 0; /* Alineado a la izquierda */
-    background-color: #2C3197; /* Color de fondo del submenú */
+    left: 0%; /* Alineado a la izquierda */
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #2C3197, #0E1031);
 }
 
 /* Muestra el submenú al pasar el mouse sobre el elemento padre */
@@ -75,8 +78,89 @@ header {
 
 /* Estilo para el botón "Ingresar" */
 .Ingresar {
-    padding: 3px 30px; /* Espaciado interno */
+    padding: 3px 45px; /* Espaciado interno */
     border-radius: 30px; /* Bordes redondeados */
     background-color: #2C3197; /* Color de fondo */
     color: white; /* Color del texto */
+}
+
+.submenu{
+    color: white;
+}
+
+/* MAIN */
+
+/* BUSCADOR */
+.buscador{
+    background-color: transparent;
+    margin: auto;
+    width: 35%;
+    border-radius: 8px;
+    padding: 2px 35px;
+    border: 1px solid black;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+p{
+    color: #7A6F6F;
+    font-weight: normal;
+    margin: 0;
+}
+
+.buscador i{
+    font-size: 20px;
+    margin-left: 400px;
+}
+
+/* SLIDER AUTOMATICO */
+.slider{
+    margin-top: 15px;
+    width: 80%;
+    height: 65%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border-bottom: 8px solid black;
+}
+
+.carrusel{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.carrusel img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
 }
