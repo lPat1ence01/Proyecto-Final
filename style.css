@@ -1,21 +1,82 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
+/* Estilo general para todos los elementos */
+* {
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+    background-color: transparent; /* Color de fondo transparente por defecto */
 }
 
-li,a,button{
-    font-family: Kadwa;
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
+/* Estilo para los enlaces y botones */
+li, a{
+    font-family: kadwa; /* Tipo de letra */
+    font-weight: bold; /* Peso de la fuente */
+    font-size: 17px; /* Tamaño de la fuente */
+    color: black; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%
+/* Estilo para el header */
+header {
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: center; /* Alineación vertical */
+    padding: 0px 20px; /* Espaciado interno */
+    border-bottom: 2px solid black; /* Borde inferior */
+}
+
+/* Estilo para el logo */
+.logo_ruta {
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+    width: 150px; /* Ancho del logo */
+    height: max-content; /* Altura automática según el contenido */
+}
+
+/* Estilo para la lista de enlaces en el menú */
+.links {
+    list-style: none; /* Elimina los puntos o viñetas de la lista */
+}
+
+/* Estilo para los elementos de la lista */
+.links li {
+    position: relative; /* Posicionamiento relativo para los elementos de la lista */
+    display: inline-block; /* Alineación horizontal */
+    padding: 0 20px; /* Espacio lateral para los elementos de la lista */
+}
+
+/* Estilo para el submenú (opciones de Ingresar) */
+.links ul {
+    display: none; /* Oculta el submenú inicialmente */
+    position: absolute; /* Posicionamiento absoluto respecto al <li> padre */
+    top: 100%; /* Se coloca justo debajo del elemento padre */
+    left: 0; /* Alineado a la izquierda */
+    background-color: #2C3197; /* Color de fondo del submenú */
+}
+
+/* Muestra el submenú al pasar el mouse sobre el elemento padre */
+.links li:hover ul {
+    display: block; /* Muestra el submenú al pasar el mouse */
+}
+
+/* Estilo para los enlaces dentro del submenú */
+.links ul li a {
+    display: block; /* Cada opción ocupa toda la línea */
+    padding: 5px 0; /* Espaciado interno */
+}
+
+/* Transición suave para los enlaces en el menú */
+.links li a {
+    transition: all 0.3s ease 0s; /* Transición de 0.3 segundos para cambios de estilo */
+}
+
+/* Cambia el color del enlace al pasar el mouse sobre él */
+.links li a:hover {
+    color: red; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilo para el botón "Ingresar" */
+.Ingresar {
+    padding: 3px 30px; /* Espaciado interno */
+    border-radius: 30px; /* Bordes redondeados */
+    background-color: #2C3197; /* Color de fondo */
+    color: white; /* Color del texto */
 }
