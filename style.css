@@ -187,6 +187,7 @@ p{
     color: white;
 }
 
+/* PLATOS */
 .productos-conteiner{
     display: flex;
     justify-content: center;
@@ -213,7 +214,7 @@ p{
     padding: 0px 8px;
 }
 
-
+/* Platos */
 .plato{
     background-color: black;
     width: 280px;
@@ -229,10 +230,10 @@ p{
 .producto p{
     color: black;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 25px;
     text-align: center;
     padding: 0;
-    margin-bottom: -20px;
+    margin-bottom: -15px;
 }
 
 .producto .precio{
@@ -268,4 +269,220 @@ p{
     max-height: 100%;
     border-radius: 50%;
     border: 2px solid #2C3197
+}
+
+/* MIRA ESTAS OPCIONES*/
+.MiraOpciones{
+    margin-top: 45px;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MiraOpciones span{
+    color:#FE0008;
+    font-weight: bold;
+}
+
+.MiraOpciones p {
+    text-align: right;
+    padding-right: 80px;
+    font-size: 45px;
+    font-weight: normal;
+    color: black;
+}
+
+/* PLATOS */
+.productos-conteiner{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.productoRED{
+    padding: 10px;
+    background-color: #FE0008;
+    border-radius: 20px;
+    width: 320px;
+    height: 440px;
+    display: flex; /* Activar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+.productoBLUE{
+    padding: 10px;
+    background-color: #2C3197;
+    border-radius: 20px;
+    width: 320px;
+    height: 440px;
+    display: flex; /* Activar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+.productoRED p,
+.productoBLUE p{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: -15px;
+}
+
+.productoRED precio,
+.productoBLUE .precio{
+    font-weight: normal;
+}
+
+.productoRED .agregarRED{
+    background-color: #2C3197;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 15px;
+    font-family: kadwa;
+    font-size: 15px;
+    padding: 2px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.productoBLUE .agregarBLUE{
+    background-color: #FE0008;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 15px;
+    font-family: kadwa;
+    font-size: 15px;
+    padding: 2px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.productoRED .agregarRED:hover,
+.productoBLUE .agregarBLUE:hover{
+    background-color: #000000;
+}
+
+/* Barra */
+.barra-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.barra {
+    height: 12px;
+    width: 50%;
+    background-color: #2C3197;
+    margin-top: 25px;
+    clip-path: polygon(0 0,100% 0, 97% 100%,0% 100%);
+}
+
+.barra-texto {
+    color: #2C3197;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    top: 13px;
+}
+
+.nuestrosLocales{
+    color: #000000;
+    font-size: 45px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nuestrosLocales span{
+    font-weight: bold;
+    color: #FE0008;
+}
+
+.logolocal-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.logolocal{
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logolocal-img{
+    width: 230px;
+    height: 230px;
+}
+
+.logolocal-img img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.barra-derecha{
+    justify-content: flex-end;
+    margin-top: 20px;   
+}
+
+.barra-derecha .barra{
+    height: 12px;
+    width: 50%;
+    background-color: #FE0008;
+    margin-top: 25px;
+    clip-path: polygon(3% 0,100% 0, 100% 100%, 0% 100%);   
+}
+
+/* NUESTRAS SEDES */
+.parrafo-sedes{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 45px;
+    color: #000000;
+}
+
+.parrafo-sedes span {
+    font-weight: bold;
+    color: #2C3197;
+}
+
+.sedes-contenedor{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sedes-contenedor .sede{
+    margin-top: -50px;
+    background-color:white;
+    width: 650px;
+    height: 400px;
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    margin-left: -55px;
+    margin-right: -55px;
+    overflow: hidden;
+}
+
+.sede img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
