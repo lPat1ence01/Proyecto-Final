@@ -96,22 +96,23 @@ header {
     margin: auto;
     width: 35%;
     border-radius: 8px;
-    padding: 2px 35px;
+    padding: 2px;
     border: 1px solid black;
     margin-top: 25px;
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
-p{
+.buscador input{
+    width: 100%;
     color: #7A6F6F;
     font-weight: normal;
-    margin: 0;
+    border: none;
 }
 
 .buscador i{
     font-size: 20px;
-    margin-left: 400px;
 }
 
 /* SLIDER AUTOMATICO */
@@ -234,6 +235,7 @@ p{
     text-align: center;
     padding: 0;
     margin-bottom: -15px;
+    line-height: 2em;
 }
 
 .producto .precio{
@@ -297,7 +299,7 @@ p{
 /* PLATOS */
 .productos-conteiner{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
