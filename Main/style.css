@@ -32,7 +32,6 @@ header {
     transition: 0.4s;
 }
 
-<<<<<<< HEAD
 .menu a.Ingresar {
     color: #FFFFFF;
     padding: 3px 45px;
@@ -72,8 +71,6 @@ header {
     z-index: 1; /* Asegura que el submenú se muestre sobre otros elementos */
 }
 
-=======
->>>>>>> 0bad889505e1eebfb03d5338b57af6aa27ef938e
 /* Ocultar los íconos del menú en modo normal */
 .mostrar-menu,
 .esconder-menu {
@@ -96,17 +93,6 @@ header {
     display: none;
 }
 
-<<<<<<< HEAD
-=======
-/* Estilo del enlace "Ingresar" */
-.menu a.Ingresar {
-    color: #FFFFFF;
-    padding: 3px 45px;
-    border-radius: 30px;
-    background-color: #2C3197;
-}
-
->>>>>>> 0bad889505e1eebfb03d5338b57af6aa27ef938e
 /* MAIN */
 
 /* BUSCADOR */
@@ -860,7 +846,6 @@ footer .parrafo-footer{
     /* Footer */
 
     footer{
-<<<<<<< HEAD
         display: flex;
         align-items: center;
         height: 100%;
@@ -906,9 +891,4 @@ footer .parrafo-footer{
         width: 100%;
         font-size: 0.5em;
     }
-=======
-        display: none;
-    }
-
->>>>>>> 0bad889505e1eebfb03d5338b57af6aa27ef938e
 }

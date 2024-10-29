@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
   const ingresarLink = document.querySelector(".Ingresar");
   const submenu = document.querySelector(".submenu");
@@ -17,8 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-=======
->>>>>>> 0bad889505e1eebfb03d5338b57af6aa27ef938e
 // Configuración para el primer carrusel (Lo más vendido) - Deslizar hacia la izquierda (predeterminado)
 var swiper1 = new Swiper(".swiper-container-1", {
   slidesPerView: 5,
