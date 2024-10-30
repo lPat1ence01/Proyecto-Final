@@ -11,18 +11,133 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Swiper CSS -->
-     <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
 <body>
     <div id="header"></div>
     <main>
+        <!--Subtitulo Eventos-->
         <div class="eventos">
-            <div class="eventos-barra"></div>
             <h2>Eventos</h2>
+            <div class="eventos-barra"></div>
         </div>
 
+        <!-- Eventos Fecha -->
+        <section id="fechas">
+            <!-- Fechas -->
+            <button data-fecha="2024-06-21">
+                <div class="num">
+                    <h2>21</h2>
+                </div>
+                <p>Junio</p>
+            </button>
+            <button data-fecha="2024-08-24">
+                <div class="num">
+                    <h2>24</h2>
+                </div>
+                <p>Agosto</p>
+            </button>
+            <button data-fecha="2024-06-21">
+                <div class="num">
+                    <h2>12</h2>
+                </div>
+                <p>Septiembre</p>
+            </button>
+            <button data-fecha="2024-06-21">
+                <div class="num">
+                    <h2>19</h2>
+                </div>
+                <p>Septiembre</p>
+            </button>
+            <button data-fecha="2024-06-21">
+                <div class="num">
+                    <h2>24</h2>
+                </div>
+                <p>Septiembre</p>
+            </button>
+            <button data-fecha="2024-06-21">
+                <div class="num">
+                    <h2>01</h2>
+                </div>
+                <p>Octubre</p>
+            </button>
+            <!-- Agrega más fechas según sea necesario -->
+        </section>
+
+        <!-- Eventos Flyers -->
+        <section id="eventos-1">
+            <div id="eventos-container">
+            <!-- Aquí se mostrarán los eventos al seleccionar una fecha -->
+                <div class="evento01" id="evento01"> 
+                    <div class="flyer">
+                        <img src="../imagenes/Publicidad/01.jpg">
+                    </div>
+                    <div class="descripcion">
+                        <p class="encargado">Ruta6 FastFood</p>
+                        <h2>Perú vs Chile</h2>
+                        <div class="fecha">
+                            <i class="fa-regular fa-calendar"></i>
+                            <p>Viernes 21 de junio - 6:30 pm</p>
+                        </div>
+                        <div class="estado">
+                            <p>Evento:</p>
+                            <p class="est">Gratuito</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="evento02" id="evento02">
+                    <div class="flyer">
+                        <img src="../imagenes/Publicidad/02.jpg">
+                    </div>
+                    <div class="descripcion">
+                        <p class="encargado">Ruta6 FastFood</p>
+                        <h2>Música en Vivo</h2>
+                        <div class="fecha">
+                            <i class="fa-regular fa-calendar"></i>
+                            <p>Viernes 21 de junio - 8:30 pm</p>
+                        </div>
+                        <div class="estado">
+                            <p>Evento:</p>
+                            <p class="est">Gratuito</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <!--Subtitulo Alquiler-->
+        <div class="eventos">
+            <h2>Alquiler</h2>
+            <div class="eventos-barra"></div>
+        </div>
+
+        <!-- Alquiler -->
+        <div class="container-alquiler">
+            <div class="informacion">
+                <p>Si deseas mas <span>INFORMACIÓN</span> dar click aqui</p>
+                <a href="#">Formulario</a>
+            </div>
+            <div class="img">
+                <img src="../imagenes/Publicidad/03.jpg">
+            </div>
+        </div>
     </main>
     <div id="footer"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript -->
+    <script src="eventos.js"></script>
 
     <script type="module">
         var fot = document.querySelector("#header")
